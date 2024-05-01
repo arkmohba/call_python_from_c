@@ -1,0 +1,10 @@
+version: '3'
+services:
+  c_with_python:
+    image: c_with_python
+    build: .
+    volumes:
+      - ./:/root/call_python_from_c
+    working_dir: /root/call_python_from_c
+    tty: true
+    
